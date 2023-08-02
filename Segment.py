@@ -5,9 +5,9 @@ from sklearn.preprocessing import LabelEncoder
 from PIL import Image
 
 # Load the pre-trained model using pickle
-model = pickle.load(open("C:\\Users\\Simeon\\Desktop\\segment_model.sav", 'rb'))
+model = pickle.load(open("segment_model.sav", 'rb'))
 
-image = Image.open("C:\\Users\\Simeon\\Downloads\\pexels-pixabay-264636.jpg")
+image = Image.open("pexels-pixabay-264636.jpg")
 
 # Load the label encoder for categorical features (Gender, Device_Type, Order_Priority, Payment_method)
 date_encoder = LabelEncoder()  # Replace with the categorical encoder used during training
